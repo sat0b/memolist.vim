@@ -123,7 +123,6 @@ endif
 
 function! s:esctitle(str)
   let str = a:str
-  let str = tolower(str)
   let str = substitute(str, g:memolist_title_pattern, '-', 'g')
   let str = substitute(str, '\(--\)\+', '-', 'g')
   let str = substitute(str, '\(^-\|-$\)', '', 'g')
